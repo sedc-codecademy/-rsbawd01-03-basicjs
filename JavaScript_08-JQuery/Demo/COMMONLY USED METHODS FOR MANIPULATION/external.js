@@ -1,0 +1,27 @@
+$(document).ready(function () {
+  let allElements = $("*");
+  let secondChildParagraphs = $(".innerWrapper").eq(1).find("p");
+  let byClassElements = $(".innerWrapper");
+  let byTagNameElements = $("p");
+  $("input").first().val();
+  secondChildParagraphs.hide();
+  secondChildParagraphs.show();
+  byClassElements.first().html();
+  byClassElements.first().html(`<h1> This is a new h1! </h1>`);
+  byTagNameElements.last().text();
+  byTagNameElements.last().text("This is a new text");
+  byTagNameElements.last().css("color");
+  byTagNameElements.last().css("color", "red");
+  $("h1").first().after("<p>new p tag after the h1</p>");
+  $("h1").first().before("<p>new p tag before the h1</p>");
+  console.log($("input").first().val());
+  console.log(secondChildParagraphs.hide());
+  console.log(secondChildParagraphs.show());
+  console.log(byClassElements.first().html());
+  console.log(byTagNameElements.last().text());
+  console.log(byTagNameElements.last().text("This is a new text"));
+  console.log(byTagNameElements.last().css("color"));
+  console.log(byTagNameElements.last().css("color", "red"));
+  console.log($("h1").first().after("<p>new p tag after the h1</p>"));
+  console.log($("h1").first().before("<p>new p tag before the h1</p>"));
+});
